@@ -55,4 +55,29 @@ public class Product {
     public static int getCount() {
         return count;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == null) {
+            return false;
+        }
+
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+
+        if (this.code != ((Product)other).code) {
+            return false;
+        }
+
+        if (this.description != ((Product)other).description) {
+            return false;
+        }
+
+        if (this.price != ((Product)other).price) {
+            return false;
+        }
+
+        return true;
+    }
 }

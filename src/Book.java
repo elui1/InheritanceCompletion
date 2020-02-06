@@ -28,4 +28,38 @@ public class Book extends Product {
                 "Pages:                " + pages + "\n" +
                 "Price:                " + this.getFormattedPrice() + "\n";
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == null) {
+            return false;
+        }
+
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+
+        if (this.getCode() != ((Book)other).getCode()) {
+            return false;
+        }
+
+        if (this.getDescription() != ((Book)other).getDescription()) {
+            return false;
+        }
+
+        if (this.getPrice() != ((Book)other).getPrice()) {
+            return false;
+        }
+
+        if (this.author != ((Book)other).author) {
+            return false;
+        }
+
+        if (this.pages != ((Book)other).pages) {
+            return false;
+        }
+
+        return true;
+    }
+
 }

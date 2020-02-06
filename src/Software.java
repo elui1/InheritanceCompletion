@@ -38,4 +38,24 @@ public class Software extends Product {
                 "Os:                       " + os + "\n" +
                 "Price:                    " + this.getFormattedPrice() + "\n";
     }
+
+    public boolean equals(Object other) {
+        if (!super.equals(other)) {
+            return false;
+        }
+
+        if (this.programmer != ((Software)other).programmer) {
+            return false;
+        }
+
+        if (this.platform != ((Software)other).platform) {
+            return false;
+        }
+
+        if (this.os != ((Software)other).os) {
+            return false;
+        }
+
+        return true;
+    }
 }
