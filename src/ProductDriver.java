@@ -1,4 +1,10 @@
 /**
+ * Inheritance 3
+ * Using the code from the previous 2 completion activities, convert the Product
+ * superclass to an abstract class.
+ */
+
+/**
  * Inheritance 2
  * Using the code from the previous "Inheritance completion activity #1",
  * create an override of the equals method for the superclass, and Book and Software subclasses.
@@ -6,11 +12,11 @@
 
 public class ProductDriver {
     public static void main(String[] args) {
-        Product p = new Product();
-        p.setCode("AUR342");
-        p.setDescription("Useful apparatus");
-        p.setPrice(45.1);
-        System.out.println(p.toString());
+//        Product p = new Product();
+//        p.setCode("AUR342");
+//        p.setDescription("Useful apparatus");
+//        p.setPrice(45.1);
+//        System.out.println(p.toString());
 
         Software s = new Software();
         s.setCode("NRF852");
